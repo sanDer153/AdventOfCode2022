@@ -1,0 +1,7 @@
+adjacent_mines = 0
+for new_x in range(x-1, x+1):
+    for new_y in range(y-1, y+1):
+        if (new_x, new_y) in mines:
+            adjacent_mines += 1
+
+board[x][y] = adjacent_mines
